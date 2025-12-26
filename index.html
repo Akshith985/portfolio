@@ -10,181 +10,231 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .repo-card:hover { transform: translateY(-5px); }
-        /* Offset for fixed navbar */
+        body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; }
+        .markdown-body { color: #24292f; }
+        .repo-card:hover { transform: translateY(-4px); border-color: #0969da; }
         section { scroll-margin-top: 80px; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <nav class="fixed w-full z-50 top-0 left-0 bg-white/90 backdrop-blur-md shadow-sm">
+<body class="bg-[#0d1117] text-white"> 
+<nav class="fixed w-full z-50 top-0 left-0 bg-gray-900 border-b border-gray-700 shadow-lg">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <a href="#home" class="text-xl font-bold text-gray-900 hover:text-blue-600 transition">Akshith Anand</a>
+                <a href="#home" class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fab fa-github"></i> Akshith Anand
+                </a>
                 
-                <div class="hidden md:flex space-x-8 font-medium text-gray-600">
-                    <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-                    <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-                    <a href="#certifications" class="hover:text-blue-600 transition">Certifications</a>
-                    <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                <div class="hidden md:flex space-x-8 font-medium text-gray-300">
+                    <a href="#about" class="hover:text-white transition">README</a>
+                    <a href="#experience" class="hover:text-white transition">Experience</a>
+                    <a href="#projects" class="hover:text-white transition">Projects</a>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
                 </div>
 
-                <div class="md:hidden text-2xl text-gray-600">
+                <div class="md:hidden text-2xl text-gray-300">
                     <a href="#contact"><i class="fas fa-bars"></i></a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-16 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <div class="mb-8">
-                <img src="podium pfp.jpg" alt="Akshith Anand" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-white shadow-lg">
-            </div>
-
-            <h1 class="text-4xl md:text-5xl font-bold mb-3 text-gray-900">Akshith Anand</h1>
-            <h2 class="text-xl text-blue-600 font-semibold mb-6">Full Stack Developer</h2>
-            
-            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                Motivated Developer with practical experience in building scalable RESTful applications using Spring Boot 3, Django, and Angular. Skilled in test-driven development (TDD) and experienced in full-stack deployment workflows.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-3 mb-8">
-                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">Java (Core)</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">Spring Boot 3</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">Python/Django</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">React/Redux</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">SQL</span>
-            </div>
-
-            <div class="flex justify-center gap-4">
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Contact Me</a>
-                <a href="https://github.com/Akshith985" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900 transition"><i class="fab fa-github mr-2"></i>GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="bg-white py-16 px-4 border-t border-gray-100">
+    <section id="about" class="pt-32 pb-16 px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
             
-            <div class="relative border-l-4 border-blue-600 ml-4 pl-8 pb-8">
-                <div class="absolute -left-3 top-0 bg-blue-600 w-6 h-6 rounded-full border-4 border-white"></div>
-                
-                <h3 class="text-2xl font-bold text-gray-800">Intern</h3>
-                <h4 class="text-lg text-blue-600 font-semibold mb-2">Future Interns</h4>
-                <p class="text-sm text-gray-500 mb-4 italic">Dec 2025 - Jan 2026</p>
-                
-                <ul class="list-disc list-outside text-gray-700 space-y-2 ml-4">
-                    <li>Managed version control for a multi-feature application, coordinating 10+ feature branches and reviewing 50+ commits to ensure code quality and zero merge conflicts.</li>
-                    <li>Optimized Redux state management to eliminate unnecessary re-renders, slashing page load times by ~20% and improving overall user retention.</li>
-                    <li>Architected a full-stack system integrating 10+ RESTful API endpoints with a PostgreSQL database to support real-time data synchronization.</li>
-                </ul>
+            <div class="flex flex-col md:flex-row items-center gap-6 mb-8 text-center md:text-left">
+                <img src="podium pfp.jpg" alt="Akshith Anand" class="w-32 h-32 rounded-full border-2 border-gray-600 shadow-lg object-cover">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white">Akshith Anand</h1>
+                    <p class="text-gray-400 mt-2 text-lg">Full Stack Developer | SRM IST, Chennai</p>
+                    <div class="flex gap-3 mt-4 justify-center md:justify-start">
+                        <a href="https://github.com/Akshith985" target="_blank" class="bg-gray-800 border border-gray-600 text-white px-4 py-1 rounded-md text-sm hover:bg-gray-700 font-semibold">Follow</a>
+                        <a href="#contact" class="bg-gray-800 border border-gray-600 text-white px-4 py-1 rounded-md text-sm hover:bg-gray-700 font-semibold">Sponsor</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-700 rounded-lg bg-[#0d1117] overflow-hidden">
+                <div class="bg-[#161b22] px-4 py-2 border-b border-gray-700 flex items-center justify-between text-sm text-gray-400 font-mono">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-bars"></i>
+                        <span>Akshith985</span> / 
+                        <span class="font-bold text-white">README.md</span>
+                    </div>
+                    <i class="fas fa-pen hover:text-white cursor-pointer"></i>
+                </div>
+
+                <div class="p-8 md:p-12 markdown-body bg-[#0d1117] text-gray-300">
+                    
+                    <h2 class="text-2xl font-bold border-b border-gray-700 pb-2 mb-4 text-white">Hi there, I'm Akshith! 👋</h2>
+                    
+                    <p class="mb-4 text-gray-300 leading-relaxed">
+                        [cite_start]I am a motivated Full Stack Developer currently studying <b>Computer Science at SRM IST, Chennai</b>[cite: 3]. 
+                        [cite_start]I specialize in building scalable RESTful applications and have a passion for Test Driven Development (TDD)[cite: 11, 12].
+                    </p>
+
+                    <h3 class="text-xl font-bold text-white mt-8 mb-4">🛠 Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-[#21262d] border border-gray-600 px-2 py-1 rounded text-sm font-mono text-blue-400">Java (Spring Boot 3)</span>
+                        <span class="bg-[#21262d] border border-gray-600 px-2 py-1 rounded text-sm font-mono text-yellow-400">Python (Django)</span>
+                        <span class="bg-[#21262d] border border-gray-600 px-2 py-1 rounded text-sm font-mono text-cyan-400">React & Redux</span>
+                        <span class="bg-[#21262d] border border-gray-600 px-2 py-1 rounded text-sm font-mono text-green-400">PostgreSQL</span>
+                        <span class="bg-[#21262d] border border-gray-600 px-2 py-1 rounded text-sm font-mono text-purple-400">Docker</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mt-8 mb-4">🔭 I’m currently working on ...</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        [cite_start]<li>Optimizing CI/CD pipelines for reliable software delivery[cite: 13].</li>
+                        [cite_start]<li>Exploring Web3 development with Solidity[cite: 15].</li>
+                        [cite_start]<li>Building complex dependency injection systems[cite: 18].</li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-16 px-4 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
-        <p class="text-center text-gray-500 mb-12">Selected works from my Resume & GitHub</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            
-            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Employee Management System</h3>
-                    <div class="mb-3">
-                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Java Spring Boot</span>
-                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">H2</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">Built a comprehensive REST API to manage user data using Spring Data JPA. Implemented Mockito for unit testing logic without DB dependencies.</p>
-                </div>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">E-Commerce Web App</h3>
-                    <div class="mb-3">
-                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">React</span>
-                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">PostgreSQL</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">Full-stack shopping app with real-time cart updates, secure payment integration, and persistent purchase history tracking.</p>
-                </div>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">SaaS Web Application</h3>
-                    <div class="mb-3">
-                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Django</span>
-                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Stripe</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">Developed a subscription-based SaaS platform with automated billing workflows via Stripe backed by a high-performance Django architecture.</p>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">More from GitHub</h3>
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <h2 class="text-2xl font-bold text-white mb-6">Pinned Repositories (Fetched via API)</h2>
+        
         <div id="loading" class="text-center text-gray-500 py-10">
-            <i class="fas fa-spinner fa-spin fa-2x"></i>
-            <p class="mt-2">Fetching repositories...</p>
+            <i class="fas fa-spinner fa-spin fa-2x text-blue-500"></i>
+            <p class="mt-2 text-gray-400">Fetching from GitHub...</p>
         </div>
-        <div id="repo-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden"></div>
+
+        <div id="repo-container" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden"></div>
     </section>
 
-    <section id="certifications" class="bg-white py-16 px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
-            <div class="space-y-6">
+    <section id="experience" class="bg-[#161b22] py-16 px-4 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Experience & Featured Works</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 
-                <div class="flex flex-col md:flex-row gap-4 items-start bg-gray-50 p-6 rounded-lg">
-                    <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full text-yellow-600">
-                        <i class="fas fa-certificate fa-lg"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-bold">AWS APAC Solutions Architecture</h3>
-                        <p class="text-sm text-gray-500 mb-2">Forage • Dec 2025</p>
-                        <p class="text-gray-600 text-sm">Designed scalable hosting architecture based on Elastic Beanstalk for clients experiencing growth.</p>
+                <div>
+                    <h3 class="text-xl font-bold text-white border-b border-gray-700 pb-2 mb-6">Experience</h3>
+                    
+                    <div class="relative pl-8 border-l-2 border-gray-700">
+                        <div class="absolute -left-2 top-0 bg-blue-500 w-4 h-4 rounded-full"></div>
+                        <h4 class="text-lg font-bold text-white">Intern</h4>
+                        <p class="text-blue-400 mb-1">Future Interns | [cite_start]Dec 2025 - Jan 2026 [cite: 20, 21]</p>
+                        <ul class="text-sm text-gray-400 list-disc ml-4 space-y-2 mt-3">
+                            [cite_start]<li>Coordinated 10+ feature branches and reviewed 50+ commits[cite: 22].</li>
+                            [cite_start]<li>Optimized Redux state to slash page load times by ~20%[cite: 23].</li>
+                            [cite_start]<li>Architected full-stack systems with PostgreSQL for real-time sync[cite: 24].</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-4 items-start bg-gray-50 p-6 rounded-lg">
-                    <div class="flex-shrink-0 bg-green-100 p-3 rounded-full text-green-600">
-                        <i class="fas fa-code fa-lg"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-bold">HPE Software Engineering Job Simulation</h3>
-                        <p class="text-sm text-gray-500 mb-2">Forage</p>
-                        <p class="text-gray-600 text-sm">Built a Java Spring Boot web server to handle HTTP requests and developed unit tests to assess performance.</p>
+                <div>
+                    <h3 class="text-xl font-bold text-white border-b border-gray-700 pb-2 mb-6">Key Projects</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-[#0d1117] border border-gray-700 p-4 rounded-lg">
+                            [cite_start]<h4 class="font-bold text-white">Employee Management System [cite: 26]</h4>
+                            <p class="text-xs text-blue-400 mb-2">Java Spring Boot • H2 • Postman</p>
+                            [cite_start]<p class="text-sm text-gray-400">Comprehensive REST API using Spring Data JPA with Mockito unit testing[cite: 27, 28].</p>
+                        </div>
+
+                        <div class="bg-[#0d1117] border border-gray-700 p-4 rounded-lg">
+                            [cite_start]<h4 class="font-bold text-white">SaaS Web Application [cite: 31]</h4>
+                            <p class="text-xs text-yellow-400 mb-2">Django • Neon PostgreSQL • Stripe</p>
+                            [cite_start]<p class="text-sm text-gray-400">Subscription platform with automated billing workflows via Stripe[cite: 32].</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
+            
+            <div class="mt-16 pt-8 border-t border-gray-800">
+                <h3 class="text-xl font-bold text-white mb-6 text-center">Certifications</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    [cite_start]<span class="bg-gray-800 border border-gray-600 px-4 py-2 rounded-full text-sm text-gray-300">AWS APAC Solutions Architecture [cite: 34]</span>
+                    [cite_start]<span class="bg-gray-800 border border-gray-600 px-4 py-2 rounded-full text-sm text-gray-300">HPE Software Engineering Job Simulation [cite: 37]</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section id="contact" class="bg-gray-900 text-white py-16 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
-            <p class="text-gray-400 mb-12 max-w-xl mx-auto">I am currently looking for full-stack opportunities. Feel free to reach out via email or connect with me on social media.</p>
-            
-            <div class="flex flex-wrap justify-center gap-8 text-3xl">
-                <a href="https://linkedin.com/in/akshith-anand-5a5988379" target="_blank" class="hover:text-blue-400 transition" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                
-                <a href="https://github.com/Akshith985" target="_blank" class="hover:text-gray-400 transition" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                
-                <a href="https://medium.com/@akshithclg" target="_blank" class="hover:text-gray-200 transition" title="Medium">
-                    <i class="fab fa-medium"></i>
-                </a>
+    <section id="contact" class="py-12 text-center bg-[#0d1117] border-t border-gray-800">
+        <h2 class="text-2xl font-bold text-white mb-8">Connect With Me</h2>
+        
+        <div class="flex justify-center gap-8 mb-8 text-2xl">
+            <a href="https://github.com/Akshith985" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/akshith-anand-5a5988379" target="_blank" class="text-blue-500 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+            <a href="https://medium.com/@akshithclg" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-medium"></i></a>
+            <a href="https://instagram.com/ax_it47" target="_blank" class="text-pink-500 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:akshithclg@gmail.com" class="text-red-500 hover:text-red-400"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <p class="text-gray-600 text-sm">
+            [cite_start]Based in Ramapuram, Chennai [cite: 4] [cite_start]• +91 93420 47169 [cite: 5]
+        </p>
+    </section>
 
-                <a href="https://instagram.com/ax_it47" target="_blank" class="hover:text-pink-500 transition" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+    <script>
+        const githubUsername = 'Akshith985'; 
 
-                <a href="mailto:akshithclg@gmail.com" class="hover:text-red-400 transition" title="Email">
-                    <i class="fas fa-envelope
+        const repoContainer = document.getElementById('repo-container');
+        const loadingDiv = document.getElementById('loading');
+
+        async function fetchRepos() {
+            try {
+                // Fetch repos
+                const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=6`);
+                
+                if (!response.ok) throw new Error(`Status: ${response.status}`);
+                
+                const repos = await response.json();
+                const filteredRepos = repos.filter(repo => !repo.fork); // Optional: Hide forks
+
+                loadingDiv.classList.add('hidden');
+                repoContainer.classList.remove('hidden');
+
+                filteredRepos.forEach(repo => {
+                    const card = document.createElement('div');
+                    // GitHub Repo Card Style
+                    card.className = 'repo-card bg-[#0d1117] p-4 rounded-md border border-gray-700 flex flex-col justify-between h-32 transition-all duration-200';
+                    
+                    card.innerHTML = `
+                        <div class="flex flex-col h-full justify-between">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="far fa-bookmark text-gray-500"></i>
+                                    <a href="${repo.html_url}" target="_blank" class="font-bold text-blue-400 hover:underline truncate text-sm md:text-base">
+                                        ${repo.name}
+                                    </a>
+                                    <span class="text-xs border border-gray-600 rounded-full px-2 text-gray-400 ml-auto">${repo.visibility}</span>
+                                </div>
+                                <p class="text-xs text-gray-400 line-clamp-2">
+                                    ${repo.description || 'No description provided.'}
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4 text-xs text-gray-500 mt-2">
+                                <span class="flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-yellow-400"></span> 
+                                    ${repo.language || 'Code'}
+                                </span>
+                                <span class="hover:text-blue-400 cursor-pointer">
+                                    <i class="far fa-star"></i> ${repo.stargazers_count}
+                                </span>
+                                <span class="hover:text-blue-400 cursor-pointer">
+                                    <i class="fas fa-code-branch"></i> ${repo.forks_count}
+                                </span>
+                            </div>
+                        </div>
+                    `;
+                    
+                    repoContainer.appendChild(card);
+                });
+
+            } catch (error) {
+                loadingDiv.innerHTML = `<p class="text-red-500 text-sm">Error loading repos.</p>`;
+                console.error(error);
+            }
+        }
+
+        fetchRepos();
+    </script>
+</body>
+</html>
